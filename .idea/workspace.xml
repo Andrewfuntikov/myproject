@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f406fdb-f967-4bbc-8710-5fcbc4b31bee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mydjangoproject/myapp1/static/img_dir/Putin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mydjangoproject/templates/about_new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mydjangoproject/templates/adding_system.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjangoproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydjangoproject/db.sqlite3-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydjangoproject/myapp1/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/myapp1/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjangoproject/myapp1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/myapp1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydjangoproject/mydjangoproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/mydjangoproject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjangoproject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,15 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Андрей/PycharmProjects/myproject&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Андрей/PycharmProjects/myproject/mydjangoproject/myapp1/static/img_dir"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject" />
+      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="myproject" />
@@ -93,11 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1720540270998</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Досмотрел 1 курс смотрю другой">
+      <option name="closed" value="true" />
+      <created>1720603659038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720603659038</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="День 1 закончен" />
-    <option name="LAST_COMMIT_MESSAGE" value="День 1 закончен" />
+    <MESSAGE value="Досмотрел 1 курс смотрю другой" />
+    <option name="LAST_COMMIT_MESSAGE" value="Досмотрел 1 курс смотрю другой" />
   </component>
 </project>

@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новый список иноагентов</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css">
 </head>
-<body>
-    <h1>Иноагенты на 10.07.24</h1>
-    {%for i in data%}
-    <h2>{{forloop.counter}}) Иноагент:<br> </h2>
-    Фамилия: {{i.second_name}}
-    Имя: {{i.name}}
-    Зарплата:
-    {% if i.salary > 50000%}
-    <b style="color:green;">{{i.salary}}</b>
-    {%else%}
-    <b style="color:red;">{{i.salary}}</b>
-    {%endif %}
-    {%endfor%}
+<body style="background: silver">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Иноагенты на 10.07.24</h1>
+            <p>{%for i in data%}
+            <h2>{{forloop.counter}}) Иноагент:</h2>
+            <b>Фамилия</b>: {{i.second_name}}
+            <b>Имя</b>: {{i.name}}
+            <b>Зарплата</b>:
+            {% if i.salary >= 50000%}
+            <b style="color:green;">{{i.salary}}</b>
+            {%else%}
+            <b style="color:red;">{{i.salary}}</b>
+            {%endif %}
+            {%endfor%}</p>
+            <p>
+                <a href="/about_new" class="btn btn-success btn-lg">О новых ино-агентах</a>
+                <a href="/adding_system" class="btn btn-primary btn-lg">Система добавления ино-агентах
+                &raquo;</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        &copy; Все права защищены 2024
+    </div>
 </body>
 </html>
