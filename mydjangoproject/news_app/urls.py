@@ -16,12 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from news_app.views import about_new_page
-from myapp1.views import adding_system, index_page
+from django.views.generic import ListView, DeleteView
+
+from myapp1.views import index_page
+from news_app.models import Articles
+from myapp1.views import adding_system
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index_page),
-    path('about_new/', about_new_page),
-    path('adding_system/', adding_system),
+    path('', ListView.as_view(queryset=Articles.objects.all().order_by('-date')[:20],
+                              template_name="about_new.html")),
+    path('<int:pk>/', DeleteView.as_view(model=Articles, template_name='about_new_post.html')),
 ]
