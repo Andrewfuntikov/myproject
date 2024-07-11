@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path
 from news_app.views import about_new_page
 from myapp1.views import adding_system, index_page
-
+from django.contrib import admin
+from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),

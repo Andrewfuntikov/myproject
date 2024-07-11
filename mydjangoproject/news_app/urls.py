@@ -25,5 +25,5 @@ from myapp1.views import adding_system
 urlpatterns = [
     path('', ListView.as_view(queryset=Articles.objects.all().order_by('-date')[:20],
                               template_name="about_new.html")),
-    path('<int:pk>/', DeleteView.as_view(model=Articles, template_name='about_new_post.html')),
+    path('<int:pk>/', DeleteView.as_view(model=Articles, template_name='about_new_post.html'))
 ]
