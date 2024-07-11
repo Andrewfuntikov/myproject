@@ -1,28 +1,14 @@
-"""
-URL configuration for mydjangoproject project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-from django.contrib import admin
-from django.urls import path
-from news_app.views import about_new_page
-from myapp1.views import adding_system, index_page
 from django.contrib import admin
 from django.urls import path, include
+
+from myapp1.views import index_page, adding_system
+from news_app import views  # Импортируйте ваши представления
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
-    path('about_new/', about_new_page),
     path('adding_system/', adding_system),
+    path('about_new/', views.about_new_page, name='news_list'),  # Добавьте этот маршрут
+    path('article/<int:pk>/', views.article_detail, name='article_detail'),  # Добавьте этот маршрут
+    path('news_app/', include('news_app.urls')),  # Если у вас есть urls.py в news_app
 ]
