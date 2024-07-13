@@ -7,6 +7,82 @@
     {%load static%}
     <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css">
     <link rel="icon" href="{% static 'img_dir/favicon.ico' %}" type="image/x-icon">
+        <style>
+        body {
+            background-color: #ffffff; /* Светло-серый фон */
+            font-family: 'Georgia', serif; /* Выбор шрифта */
+        }
+        .jumbotron {
+            background-color: #dce3f9; /* Белый фон для джамботрона */
+            padding: 40px; /* Увеличенный отступ */
+            border-radius: 10px; /* Скругленные углы */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для джамботрона */
+            margin-bottom: 10px; /* Отступ снизу */
+        }
+        .text-info {
+            color: #000000; /* Синий цвет для заголовков */
+        }
+        .img-right {
+            float: right; /* Расположение изображения справа */
+            margin-left: 20px; /* Отступ слева */
+            max-width: 40%; /* Максимальная ширина изображения */
+            height: auto; /* Автоматическая высота изображения */
+            margin: 0 auto;  /* Центрирование по горизонтали */
+            margin-top: -80px; /* Отступ сверху */
+        }
+        .container {
+            max-width: 80%; /* Максимальная ширина контейнера */
+        }
+        .container hr {
+            margin-top: 40px; /* Отступ сверху от разделительной линии */
+            margin-bottom: 20px; /* Отступ снизу от разделительной линии */
+            border-top: 1px solid #ddd; /* Стиль разделительной линии */
+        }
+        .container p {
+            line-height: 1.6; /* Интервал между строками */
+            font-size: 18px; /* Размер шрифта */
+        }
+        .container a {
+            color: #337ab7; /* Синий цвет для ссылки */
+            text-decoration: none; /* Отключение подчеркивания */
+        }
+        .container a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении курсора */
+        }
+        .btn-back {
+            background-color: #4CAF50; /* Зеленый фон */
+            color: whit5e; /* Белый текст */
+            padding: 10px 20px; /* Отступы */
+            border: none; /* Без рамки */
+            border-radius: 5px; /* Скругленные углы */
+            text-align: center; /* Выравнивание текста по центру */
+            text-decoration: none; /* Отключение подчеркивания */
+            display: inline-block; /* Выравнивание по умолчанию */
+            font-size: 16px; /* Размер шрифта */
+            margin: 4px 2px; /* Отступы сверху и снизу */
+            cursor: pointer; /* Курсор указатель */
+            transition: background-color 0.3s ease; /* Плавная анимация */
+        }
+        .btn-back:hover {
+            background-color: #45a049; /* Темнее зеленый фон при наведении */
+        }
+        .copyright {
+            text-align: center; /* Выравнивание по центру */
+            font-size: 12px; /* Мелкий шрифт */
+            margin-top: 50px; /* Отступ сверху */
+            padding-bottom: 20px; /* Отступ снизу */
+            background-color: #f0f0f0; /* Серый фон */
+            padding: 5px 0; /* Отступы */
+            position: fixed; /* Фиксированное позиционирование */
+            bottom: 0; /* Внизу страницы */
+            width: 100%; /* Ширина 100% */
+        }
+        .img-container {
+            {% if articles.image %}
+                <img src="{% static 'img_dir/'|add:articles.image.name %}" class="img-thumbnail img-right">
+            {% endif %}
+        }
+    </style>
 </head>
 <body style="background: silver">
     <div class="jumbotron">
