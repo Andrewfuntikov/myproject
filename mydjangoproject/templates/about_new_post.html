@@ -59,18 +59,22 @@
         }
 
         .btn-back {
-            background-color: #337ab7; /* Синий фон */
-            color: #fff; /* Белый текст */
-            border: none; /* Без рамки */
+            background-color: #4CAF50; /* Зеленый фон */
+            color: white; /* Белый текст */
             padding: 10px 20px; /* Отступы */
+            border: none; /* Без рамки */
             border-radius: 5px; /* Скругленные углы */
+            text-align: center; /* Выравнивание текста по центру */
             text-decoration: none; /* Отключение подчеркивания */
-            font-weight: bold; /* Жирный шрифт */
+            display: inline-block; /* Выравнивание по умолчанию */
+            font-size: 16px; /* Размер шрифта */
+            margin: 4px 2px; /* Отступы сверху и снизу */
+            cursor: pointer; /* Курсор указатель */
             transition: background-color 0.3s ease; /* Плавная анимация */
         }
 
         .btn-back:hover {
-            background-color: #21618c; /* Темнее синий фон при наведении */
+            background-color: #45a049; /* Темнее зеленый фон при наведении */
         }
 
         .copyright {
@@ -78,21 +82,16 @@
             font-size: 12px; /* Мелкий шрифт */
             margin-top: 50px; /* Отступ сверху */
             padding-bottom: 20px; /* Отступ снизу */
+            background-color: #f0f0f0; /* Серый фон */
+            padding: 5px 0; /* Отступы */
+            position: fixed; /* Фиксированное позиционирование */
+            bottom: 0; /* Внизу страницы */
+            width: 100%; /* Ширина 100% */
         }
-
         .img-container {
             {% if articles.image %}
                 <img src="{% static 'img_dir/'|add:articles.image.name %}" class="img-thumbnail img-right">
             {% endif %}
-        }
-
-        .footer {
-            background-color: #f0f0f0; /* Серый фон */
-            padding: 10px 0; /* Отступы */
-            text-align: center; /* Выравнивание по центру */
-            position: fixed; /* Фиксированное позиционирование */
-            bottom: 0; /* Внизу страницы */
-            width: 100%; /* Ширина 100% */
         }
     </style>
 </head>
@@ -103,14 +102,12 @@
         <div class="img-container">
             <img src="{% static 'img_dir/'|add:articles.image.name %}" class="img-thumbnail img-right">
         </div>
-        <p>{{ articles.post|safe|linebreaksbr }}</p>  <!-- Изменено: linebreaksbr -->
+        <p>{{ articles.post|safe|linebreaksbr }}</p>
         <h6 class="text-info">Опубликовано {{articles.date|date:"Y-m-d в H:i:s"}}</h6>
         <a href="{% url 'news_list' %}" class="btn-back">Назад к списку новостей</a>
     </div>
 </div>
 
-<div class="footer">
+<div class="copyright">
     &copy; Все права защищены 2024
 </div>
-</body>
-</html>

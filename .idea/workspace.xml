@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f406fdb-f967-4bbc-8710-5fcbc4b31bee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydjangoproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydjangoproject/myapp1/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/myapp1/static/img_dir/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjangoproject/mydjangoproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/mydjangoproject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydjangoproject/templates/about_new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydjangoproject/templates/about_new_post.html" afterDir="false" />
     </list>
@@ -34,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Андрей/PycharmProjects/myproject/mydjangoproject/media/images"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Андрей/PycharmProjects/myproject/mydjangoproject/media/images&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\media\images" />
@@ -51,11 +53,11 @@
       <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir\images" />
       <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir" />
+      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir\images\img_dir" />
+      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static\img_dir\images" />
       <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\myapp1\static" />
       <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject" />
-      <recent name="C:\Users\Андрей\PycharmProjects\myproject\mydjangoproject\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720775480582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="разобраться с отображением фото">
+      <option name="closed" value="true" />
+      <created>1720776082395</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720776082395</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +182,7 @@
     <MESSAGE value="Откат назад всё работает" />
     <MESSAGE value="обити осталось коректировки" />
     <MESSAGE value="Добавил инкоки и коректировки олной страницы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил инкоки и коректировки олной страницы" />
+    <MESSAGE value="разобраться с отображением фото" />
+    <option name="LAST_COMMIT_MESSAGE" value="разобраться с отображением фото" />
   </component>
 </project>
